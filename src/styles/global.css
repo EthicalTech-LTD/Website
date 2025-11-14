@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+footer a {
+    @apply text-emerald-200 hover:text-emerald-400 transition-colors;
+}

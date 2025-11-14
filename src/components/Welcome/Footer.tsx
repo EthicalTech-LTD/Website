@@ -5,7 +5,7 @@ export default function Footer() {
         <div class="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div class="flex items-center gap-2 mb-4">
-              <div class="w-10 h-10 bg-linear-to-br from-emerald-600 to-teal-500 rounded-lg flex items-center justify-center">
+              <div class="w-10 h-10 bg-linear-to-br from-emerald-800 to-emerald-700 rounded-lg flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
               <span class="text-2xl font-bold text-white">EthicalTech</span>
             </div>
-            <p class="text-slate-400 leading-relaxed">
+            <p class="text-emerald-200 leading-relaxed">
               Building a fairer digital future, one project at a time.
             </p>
           </div>
@@ -70,27 +70,23 @@ export default function Footer() {
           <div>
             <h4 class="font-bold text-white mb-4">Contact</h4>
             <ul class="space-y-2">
-              <li class="text-slate-400">
+              <li>
                 <a href="mailto:ethicaltechuk@proton.me">
                   ethicaltechuk@proton.me
                 </a>
               </li>
-              <li class="text-slate-400">+44 7700 000 000</li>
-              <li class="text-slate-400">England, UK</li>
+              <li class="text-emerald-200">+44 7700 000 000</li>
+              <li class="text-emerald-200">England, UK</li>
             </ul>
           </div>
         </div>
         <div class="border-t border-emerald-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-slate-400 text-sm">
+          <p class="text-emerald-200 text-sm">
             © 2025 EthicalTech. All rights reserved. Built with integrity.
           </p>
           <div class="flex gap-6 text-sm">
-            <a href="#" class="hover:text-emerald-400 transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" class="hover:text-emerald-400 transition-colors">
-              Terms of Service
-            </a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
           </div>
         </div>
       </div>
