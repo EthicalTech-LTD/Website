@@ -50,8 +50,6 @@ export default function WelcomeHero() {
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="lucide lucide-arrow-right w-5 h-5 ml-2"
-                  data-source-location="pages/Home:133:18"
-                  data-dynamic-content="false"
                 >
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -71,14 +69,16 @@ export default function WelcomeHero() {
                   style="opacity: 1; transform: none;"
                 >
                   <div class="text-4xl font-bold text-white mb-2">100%</div>
-                  <div class="text-blue-100">Transparent Pricing</div>
+                  <div class="text-emerald-100">Transparent Pricing</div>
                 </div>
                 <div
                   class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20"
                   style="opacity: 1; transform: none;"
                 >
                   <div class="text-4xl font-bold text-white mb-2">1:1</div>
-                  <div class="text-blue-100">Pay Ratio (Lowest to Highest)</div>
+                  <div class="text-emerald-100">
+                    Pay Ratio (Lowest to Highest)
+                  </div>
                 </div>
                 <div
                   class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20"
