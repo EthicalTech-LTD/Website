@@ -113,7 +113,7 @@ export default function CultureSection() {
   return (
     <section
       id="culture"
-      class="py-20 px-6 bg-gradient-to-br from-emerald-600 to-emerald-500 text-white"
+      class="py-20 px-6 bg-gradient-to-br from-emerald-800 to-emerald-500 text-white"
     >
       <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
