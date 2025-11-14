@@ -2,7 +2,6 @@
 import { defineConfig } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
-import tailwind from "@astrojs/tailwind";
 
 import solidJs from "@astrojs/solid-js";
 
