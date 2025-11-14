@@ -32,17 +32,17 @@ export default function Footer() {
             <ul class="space-y-2">
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  Web Development
+                  Web development
                 </a>
               </li>
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  Digital Strategy
+                  Digital strategy
                 </a>
               </li>
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  Product Design
+                  Product design
                 </a>
               </li>
             </ul>
@@ -52,17 +52,17 @@ export default function Footer() {
             <ul class="space-y-2">
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  About Us
+                  About us
                 </a>
               </li>
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  Our Values
+                  Our values
                 </a>
               </li>
               <li>
                 <a href="#" class="hover:text-emerald-400 transition-colors">
-                  Join Our Team
+                  Join our team
                 </a>
               </li>
             </ul>
@@ -85,8 +85,8 @@ export default function Footer() {
             © 2025 EthicalTech. All rights reserved. Built with integrity.
           </p>
           <div class="flex gap-6 text-sm">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
           </div>
         </div>
       </div>
