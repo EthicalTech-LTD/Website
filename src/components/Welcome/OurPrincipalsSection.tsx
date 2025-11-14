@@ -1,3 +1,4 @@
+import type { JSX } from "solid-js/jsx-runtime";
 import Icon from "./Icon";
 
 const values = [
@@ -107,7 +108,13 @@ const values = [
   },
 ];
 
-function RenderValueCard({ title, description, icon }) {
+interface ValueCardProps {
+  title: string;
+  description: string;
+  icon: () => JSX.Element;
+}
+
+function RenderValueCard({ title, description, icon }: ValueCardProps) {
   return (
     <div style="opacity: 1; transform: none;">
       <div class="rounded-xl bg-card text-card-foreground shadow h-full border-2 border-emerald-800 hover:border-emerald-400 transition-all duration-300 hover:shadow-lg group">
