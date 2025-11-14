@@ -11,7 +11,7 @@ export default function ContactSection() {
             honest conversation.
           </p>
           <div class="flex flex-wrap gap-4 justify-center">
-            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground shadow h-10 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-10">
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground shadow h-10 rounded-md bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-10 w-full md:w-fit">
               Get in touch
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export default function ContactSection() {
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </button>
-            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-emerald-100 hover:text-accent-foreground h-10 rounded-md text-lg px-10">
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-emerald-100 hover:text-accent-foreground h-10 rounded-md text-lg px-10 w-full md:w-fit">
               View our pricing
             </button>
           </div>
