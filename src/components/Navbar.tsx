@@ -25,12 +25,6 @@ export default function Navbar() {
         </div>
         <nav class="hidden md:flex items-center gap-8">
           <a
-            href="#values"
-            class="text-slate-600 hover:text-emerald-600 transition-colors font-medium"
-          >
-            Values
-          </a>
-          <a
             href="#services"
             class="text-slate-600 hover:text-emerald-600 transition-colors font-medium"
           >
