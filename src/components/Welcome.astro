@@ -2,68 +2,980 @@
 // import logo from "../assets/astro.svg"; // Replace with your actual logo
 // import heroImage from "../assets/hero-image.svg"; // Optional hero visual
 import "../styles/global.css";
+import Navbar from "./Navbar.tsx";
+import WelcomeHero from "./Welcome/Hero.tsx";
+import Footer from "./Welcome/Footer.tsx";
 ---
 
 <div
     class="min-h-screen bg-gradient-to-br from-white to-gray-100 text-gray-800 font-sans"
 >
-    <header
-        class="flex items-center justify-between px-6 py-4 shadow-sm bg-white"
-    >
-        <a href="/" class="flex items-center gap-2">
-            <!-- <img src={logo.src} alt="EthicalTech UK Logo" class="h-8 w-auto" /> -->
-            <span class="text-xl font-semibold tracking-tight"
-                >EthicalTech UK</span
+    <div id="root">
+        <div class="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+            <Navbar />
+            <WelcomeHero />
+            <section id="values" class="py-20 px-6 bg-white">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16">
+                        <div
+                            class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow hover:bg-primary/80 mb-4 bg-teal-50 text-teal-700 border-teal-200"
+                        >
+                            Our Principles
+                        </div><h2 class="text-4xl md:text-5xl font-bold mb-4">
+                            Built on Ethics, Not Exploitation
+                        </h2><p
+                            class="text-xl text-slate-600 max-w-3xl mx-auto"
+                        >
+                            These aren't just values on a wall. They're
+                            commitments we live by every single day.
+                        </p>
+                    </div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div style="opacity: 1; transform: none;">
+                            <div
+                                class="rounded-xl bg-card text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-lg group"
+                            >
+                                <div class="p-6">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-dollar-sign w-7 h-7 text-white"
+                                            data-source-location="pages/Home:192:22"
+                                            data-dynamic-content="false"
+                                            ><line
+                                                x1="12"
+                                                x2="12"
+                                                y1="2"
+                                                y2="22"></line><path
+                                                d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:194:20"
+                                        data-dynamic-content="true"
+                                        class="text-xl font-bold mb-3"
+                                    >
+                                        Transparent Pricing
+                                    </h3><p
+                                        data-source-location="pages/Home:195:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 leading-relaxed"
+                                    >
+                                        No hidden fees, no surprises. Every
+                                        client sees exactly what they're paying
+                                        for and why.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div style="opacity: 1; transform: none;">
+                            <div
+                                class="rounded-xl bg-card text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-lg group"
+                            >
+                                <div class="p-6">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-users w-7 h-7 text-white"
+                                            data-source-location="pages/Home:192:22"
+                                            data-dynamic-content="false"
+                                            ><path
+                                                d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                                            ></path><circle cx="9" cy="7" r="4"
+                                            ></circle><path
+                                                d="M22 21v-2a4 4 0 0 0-3-3.87"
+                                            ></path><path
+                                                d="M16 3.13a4 4 0 0 1 0 7.75"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:194:20"
+                                        data-dynamic-content="true"
+                                        class="text-xl font-bold mb-3"
+                                    >
+                                        Flat Pay Structure
+                                    </h3><p
+                                        data-source-location="pages/Home:195:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 leading-relaxed"
+                                    >
+                                        Everyone from junior to senior earns
+                                        equitably. We believe in sharing
+                                        success, not hoarding it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div
+                            data-source-location="pages/Home:182:14"
+                            data-dynamic-content="true"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:189:16"
+                                data-dynamic-content="true"
+                                class="rounded-xl bg-card text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-lg group"
+                            >
+                                <div
+                                    data-source-location="pages/Home:190:18"
+                                    data-dynamic-content="true"
+                                    class="p-6"
+                                >
+                                    <div
+                                        data-source-location="pages/Home:191:20"
+                                        data-dynamic-content="false"
+                                        class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-heart w-7 h-7 text-white"
+                                            data-source-location="pages/Home:192:22"
+                                            data-dynamic-content="false"
+                                            ><path
+                                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:194:20"
+                                        data-dynamic-content="true"
+                                        class="text-xl font-bold mb-3"
+                                    >
+                                        People First
+                                    </h3><p
+                                        data-source-location="pages/Home:195:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 leading-relaxed"
+                                    >
+                                        Technology serves humans, not the other
+                                        way around. We build with empathy and
+                                        purpose.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div
+                            data-source-location="pages/Home:182:14"
+                            data-dynamic-content="true"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:189:16"
+                                data-dynamic-content="true"
+                                class="rounded-xl bg-card text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-lg group"
+                            >
+                                <div
+                                    data-source-location="pages/Home:190:18"
+                                    data-dynamic-content="true"
+                                    class="p-6"
+                                >
+                                    <div
+                                        data-source-location="pages/Home:191:20"
+                                        data-dynamic-content="false"
+                                        class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-400 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-shield w-7 h-7 text-white"
+                                            data-source-location="pages/Home:192:22"
+                                            data-dynamic-content="false"
+                                            ><path
+                                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:194:20"
+                                        data-dynamic-content="true"
+                                        class="text-xl font-bold mb-3"
+                                    >
+                                        Ethical Standards
+                                    </h3><p
+                                        data-source-location="pages/Home:195:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 leading-relaxed"
+                                    >
+                                        We say no to dark patterns, data
+                                        exploitation, and profit-over-people
+                                        practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><section
+                data-source-location="pages/Home:205:6"
+                data-dynamic-content="true"
+                id="services"
+                class="py-20 px-6 bg-slate-50"
             >
-        </a>
-        <nav class="space-x-6 text-sm font-medium">
-            <a href="#services" class="hover:text-indigo-600">Services</a>
-            <a href="#about" class="hover:text-indigo-600">About</a>
-            <a href="#contact" class="hover:text-indigo-600">Contact</a>
-        </nav>
-    </header>
-
-    <main
-        class="flex flex-col items-center justify-center text-center px-6 py-20"
-    >
-        <!-- <img src={heroImage.src} alt="" class="max-w-md mb-8" /> -->
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Ethical Web Solutions for a Better Future
-        </h1>
-        <p class="text-lg text-gray-600 max-w-xl mb-6">
-            We craft accessible, privacy-first digital experiences for
-            mission-driven organizations.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a
-                href="#contact"
-                class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+                <div
+                    data-source-location="pages/Home:206:8"
+                    data-dynamic-content="true"
+                    class="max-w-7xl mx-auto"
+                >
+                    <div
+                        data-source-location="pages/Home:207:10"
+                        data-dynamic-content="false"
+                        class="text-center mb-16"
+                    >
+                        <div
+                            data-source-location="pages/Home:208:12"
+                            data-dynamic-content="false"
+                            class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow hover:bg-primary/80 mb-4 bg-emerald-50 text-emerald-700 border-emerald-200"
+                        >
+                            What We Do
+                        </div><h2
+                            data-source-location="pages/Home:209:12"
+                            data-dynamic-content="false"
+                            class="text-4xl md:text-5xl font-bold mb-4"
+                        >
+                            Services That Serve
+                        </h2><p
+                            data-source-location="pages/Home:210:12"
+                            data-dynamic-content="false"
+                            class="text-xl text-slate-600 max-w-3xl mx-auto"
+                        >
+                            Expert digital services delivered with transparency,
+                            integrity, and care.
+                        </p>
+                    </div><div
+                        data-source-location="pages/Home:215:10"
+                        data-dynamic-content="true"
+                        class="grid md:grid-cols-3 gap-8"
+                    >
+                        <div
+                            data-source-location="pages/Home:217:14"
+                            data-dynamic-content="true"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:224:16"
+                                data-dynamic-content="true"
+                                class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-teal-300 transition-all duration-300 hover:shadow-xl group bg-white"
+                            >
+                                <div
+                                    data-source-location="pages/Home:225:18"
+                                    data-dynamic-content="true"
+                                    class="p-8"
+                                >
+                                    <div
+                                        data-source-location="pages/Home:226:20"
+                                        data-dynamic-content="false"
+                                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-code-xml w-8 h-8 text-white"
+                                            data-source-location="pages/Home:227:22"
+                                            data-dynamic-content="false"
+                                            ><path d="m18 16 4-4-4-4"
+                                            ></path><path d="m6 8-4 4 4 4"
+                                            ></path><path d="m14.5 4-5 16"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:229:20"
+                                        data-dynamic-content="true"
+                                        class="text-2xl font-bold mb-4"
+                                    >
+                                        Web Development
+                                    </h3><p
+                                        data-source-location="pages/Home:230:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 mb-6 leading-relaxed"
+                                    >
+                                        Beautiful, accessible websites built
+                                        with modern standards and ethical design
+                                        principles.
+                                    </p><div
+                                        data-source-location="pages/Home:231:20"
+                                        data-dynamic-content="true"
+                                        class="space-y-2"
+                                    >
+                                        <div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Responsive Design</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Performance Optimized</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >WCAG Compliant</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div
+                            data-source-location="pages/Home:217:14"
+                            data-dynamic-content="true"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:224:16"
+                                data-dynamic-content="true"
+                                class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-teal-300 transition-all duration-300 hover:shadow-xl group bg-white"
+                            >
+                                <div
+                                    data-source-location="pages/Home:225:18"
+                                    data-dynamic-content="true"
+                                    class="p-8"
+                                >
+                                    <div
+                                        data-source-location="pages/Home:226:20"
+                                        data-dynamic-content="false"
+                                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-sparkles w-8 h-8 text-white"
+                                            data-source-location="pages/Home:227:22"
+                                            data-dynamic-content="false"
+                                            ><path
+                                                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                                            ></path><path d="M20 3v4"
+                                            ></path><path d="M22 5h-4"
+                                            ></path><path d="M4 17v2"
+                                            ></path><path d="M5 18H3"
+                                            ></path></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:229:20"
+                                        data-dynamic-content="true"
+                                        class="text-2xl font-bold mb-4"
+                                    >
+                                        Digital Strategy
+                                    </h3><p
+                                        data-source-location="pages/Home:230:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 mb-6 leading-relaxed"
+                                    >
+                                        Honest consulting that prioritizes your
+                                        real needs over upselling unnecessary
+                                        features.
+                                    </p><div
+                                        data-source-location="pages/Home:231:20"
+                                        data-dynamic-content="true"
+                                        class="space-y-2"
+                                    >
+                                        <div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Business Analysis</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Tech Stack Selection</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Growth Planning</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div
+                            data-source-location="pages/Home:217:14"
+                            data-dynamic-content="true"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:224:16"
+                                data-dynamic-content="true"
+                                class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-teal-300 transition-all duration-300 hover:shadow-xl group bg-white"
+                            >
+                                <div
+                                    data-source-location="pages/Home:225:18"
+                                    data-dynamic-content="true"
+                                    class="p-8"
+                                >
+                                    <div
+                                        data-source-location="pages/Home:226:20"
+                                        data-dynamic-content="false"
+                                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-target w-8 h-8 text-white"
+                                            data-source-location="pages/Home:227:22"
+                                            data-dynamic-content="false"
+                                            ><circle cx="12" cy="12" r="10"
+                                            ></circle><circle
+                                                cx="12"
+                                                cy="12"
+                                                r="6"></circle><circle
+                                                cx="12"
+                                                cy="12"
+                                                r="2"></circle></svg
+                                        >
+                                    </div><h3
+                                        data-source-location="pages/Home:229:20"
+                                        data-dynamic-content="true"
+                                        class="text-2xl font-bold mb-4"
+                                    >
+                                        Product Design
+                                    </h3><p
+                                        data-source-location="pages/Home:230:20"
+                                        data-dynamic-content="true"
+                                        class="text-slate-600 mb-6 leading-relaxed"
+                                    >
+                                        User-centered design that respects
+                                        privacy and creates genuine value for
+                                        your customers.
+                                    </p><div
+                                        data-source-location="pages/Home:231:20"
+                                        data-dynamic-content="true"
+                                        class="space-y-2"
+                                    >
+                                        <div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >UX Research</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >UI Design</span
+                                            >
+                                        </div><div
+                                            data-source-location="pages/Home:233:24"
+                                            data-dynamic-content="true"
+                                            class="flex items-center gap-2 text-slate-700"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-circle-check-big w-5 h-5 text-teal-500"
+                                                data-source-location="pages/Home:234:26"
+                                                data-dynamic-content="false"
+                                                ><path
+                                                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                                                ></path><path d="m9 11 3 3L22 4"
+                                                ></path></svg
+                                            ><span
+                                                data-source-location="pages/Home:235:26"
+                                                data-dynamic-content="true"
+                                                >Prototyping</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><section
+                data-source-location="pages/Home:248:6"
+                data-dynamic-content="true"
+                id="culture"
+                class="py-20 px-6 bg-gradient-to-br from-emerald-600 to-teal-500 text-white"
             >
-                Get in Touch
-            </a>
-            <a
-                href="#services"
-                class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition"
-            >
-                Explore Services
-            </a>
-        </div>
-    </main>
-
-    <section id="news" class="max-w-xl mx-auto px-6 py-12 text-left">
-        <h2 class="text-2xl font-semibold mb-2">Latest Update</h2>
-        <p class="text-gray-700 mb-4">
-            EthicalTech UK is proud to launch our new accessibility audit
-            service. Ensure your site meets WCAG standards and delivers
-            inclusive experiences.
-        </p>
-        <a
-            href="/blog/accessibility-audit"
-            class="text-indigo-600 hover:underline">Read more →</a
+                <div
+                    data-source-location="pages/Home:249:8"
+                    data-dynamic-content="true"
+                    class="max-w-7xl mx-auto"
+                >
+                    <div
+                        data-source-location="pages/Home:250:10"
+                        data-dynamic-content="true"
+                        class="grid lg:grid-cols-2 gap-12 items-center"
+                    >
+                        <div
+                            data-source-location="pages/Home:251:12"
+                            data-dynamic-content="false"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <div
+                                data-source-location="pages/Home:256:14"
+                                data-dynamic-content="false"
+                                class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow mb-6 bg-white/20 text-white border-white/30 hover:bg-white/20"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-zap w-3 h-3 mr-1"
+                                    data-source-location="pages/Home:257:16"
+                                    data-dynamic-content="false"
+                                    ><path
+                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                                    ></path></svg
+                                >Our Culture
+                            </div><h2
+                                data-source-location="pages/Home:260:14"
+                                data-dynamic-content="false"
+                                class="text-4xl md:text-5xl font-bold mb-6"
+                            >
+                                A flat structure that actually works
+                            </h2><p
+                                data-source-location="pages/Home:263:14"
+                                data-dynamic-content="false"
+                                class="text-xl text-blue-50 mb-8 leading-relaxed"
+                            >
+                                No hierarchy games. No salary secrets. Our
+                                junior developers earn a fair wage, and our
+                                senior developers aren't astronomically
+                                overpaid. Everyone knows what everyone makes,
+                                and we're proud of it.
+                            </p><div class="space-y-4">
+                                <div
+                                    class="flex items-start gap-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-trending-up w-6 h-6 text-teal-200 flex-shrink-0 mt-1"
+                                        data-source-location="pages/Home:270:18"
+                                        data-dynamic-content="false"
+                                        ><polyline
+                                            points="22 7 13.5 15.5 8.5 10.5 2 17"
+                                        ></polyline><polyline
+                                            points="16 7 22 7 22 13"
+                                        ></polyline></svg
+                                    ><div>
+                                        <h4 class="font-bold mb-1">
+                                            Pay Ratio: 1:1
+                                        </h4><p class="text-blue-100">
+                                            Our highest paid team member earns
+                                            exactly the same as our lowest. True
+                                            equity.
+                                        </p>
+                                    </div>
+                                </div><div
+                                    class="flex items-start gap-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-heart w-6 h-6 text-teal-200 flex-shrink-0 mt-1"
+                                        data-source-location="pages/Home:277:18"
+                                        data-dynamic-content="false"
+                                        ><path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                        ></path></svg
+                                    ><div
+                                        data-source-location="pages/Home:278:18"
+                                        data-dynamic-content="false"
+                                    >
+                                        <h4
+                                            data-source-location="pages/Home:279:20"
+                                            data-dynamic-content="false"
+                                            class="font-bold mb-1"
+                                        >
+                                            Profit Sharing
+                                        </h4><p
+                                            data-source-location="pages/Home:280:20"
+                                            data-dynamic-content="false"
+                                            class="text-blue-100"
+                                        >
+                                            Success is shared equally. Every
+                                            team member gets the same profit
+                                            share.
+                                        </p>
+                                    </div>
+                                </div><div
+                                    data-source-location="pages/Home:283:16"
+                                    data-dynamic-content="false"
+                                    class="flex items-start gap-4 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-shield w-6 h-6 text-teal-200 flex-shrink-0 mt-1"
+                                        data-source-location="pages/Home:284:18"
+                                        data-dynamic-content="false"
+                                        ><path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                                        ></path></svg
+                                    ><div
+                                        data-source-location="pages/Home:285:18"
+                                        data-dynamic-content="false"
+                                    >
+                                        <h4
+                                            data-source-location="pages/Home:286:20"
+                                            data-dynamic-content="false"
+                                            class="font-bold mb-1"
+                                        >
+                                            Open Book
+                                        </h4><p
+                                            data-source-location="pages/Home:287:20"
+                                            data-dynamic-content="false"
+                                            class="text-emerald-100"
+                                        >
+                                            Every financial decision is
+                                            transparent and accessible to the
+                                            entire team.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div
+                            class="bg-white rounded-3xl p-8 shadow-2xl"
+                            style="opacity: 1; transform: none;"
+                        >
+                            <h3 class="text-2xl font-bold text-slate-900 mb-6">
+                                What people say
+                            </h3><div class="space-y-6">
+                                <div
+                                    class="border-l-4 border-teal-500 pl-6 py-2"
+                                >
+                                    <p
+                                        class="text-slate-700 italic mb-3 leading-relaxed"
+                                    >
+                                        "Finally, an agency that treats us like
+                                        partners, not cash cows. Their
+                                        transparent pricing model is
+                                        revolutionary."
+                                    </p><div>
+                                        <div class="font-bold text-slate-900">
+                                            Sarah Chen
+                                        </div><div
+                                            class="text-sm text-slate-500"
+                                        >
+                                            CEO, GreenLeaf Co
+                                        </div>
+                                    </div>
+                                </div><div
+                                    class="border-l-4 border-teal-500 pl-6 py-2"
+                                >
+                                    <p
+                                        class="text-slate-700 italic mb-3 leading-relaxed"
+                                    >
+                                        "Knowing that everyone on my project is
+                                        fairly compensated makes the work feel
+                                        better. Plus, the quality is
+                                        exceptional."
+                                    </p><div>
+                                        <div class="font-bold text-slate-900">
+                                            Marcus Rivera
+                                        </div><div
+                                            class="text-sm text-slate-500"
+                                        >
+                                            Product Director, Innovate Labs
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><section class="py-20 px-6 bg-slate-50">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div style="opacity: 1; transform: none;">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                            Ready to Work with an Agency That Gives a Damn?
+                        </h2><p class="text-xl text-slate-600 mb-10">
+                            Let's build something meaningful together. No sales
+                            pressure, just honest conversation.
+                        </p><div class="flex flex-wrap gap-4 justify-center">
+                            <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground shadow h-10 rounded-md bg-emerald-600 text-white text-lg px-10"
+                                >Get in touch<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-5 h-5 ml-2"
+                                    data-source-location="pages/Home:333:16"
+                                    data-dynamic-content="false"
+                                    ><path d="M5 12h14"></path><path
+                                        d="m12 5 7 7-7 7"></path></svg
+                                ></button
+                            ><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-10 rounded-md text-lg px-10"
+                                >View Our Pricing</button
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer />
+        </div><div
+            class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"
         >
-    </section>
-
-    <footer class="text-center text-sm text-gray-500 py-6 border-t">
-        &copy; 2025 EthicalTech UK.
-    </footer>
+            <div
+                class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"
+            >
+            </div>
+        </div>
+    </div>
 </div>
