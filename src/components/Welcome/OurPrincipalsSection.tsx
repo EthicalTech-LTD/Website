@@ -117,11 +117,13 @@ interface ValueCardProps {
 function RenderValueCard({ title, description, icon }: ValueCardProps) {
   return (
     <div style="opacity: 1; transform: none;">
-      <div class="rounded-xl bg-card text-card-foreground shadow h-full border-2 border-emerald-800 hover:border-emerald-400 transition-all duration-300 hover:shadow-lg group">
-        <div class="p-6">
+      <div class="rounded-xl bg-emerald-700  text-center text-card-foreground shadow h-full border-2 border-white/20 hover:border-emerald-400 transition-all duration-300 hover:shadow-lg group">
+        <div class="p-6 flex flex-col justify-center items-center">
           {icon()}
-          <h3 class="text-xl font-bold mb-3">{title}</h3>
-          <p class="text-slate-700 leading-relaxed">{description}</p>
+          <h3 class="text-xl font-bold text-emerald-200 mb-3 tracking-wider uppercase">
+            {title}
+          </h3>
+          <p class="text-emerald-50 leading-relaxed">{description}</p>
         </div>
       </div>
     </div>
@@ -130,16 +132,19 @@ function RenderValueCard({ title, description, icon }: ValueCardProps) {
 
 export default function OurPrincipalsSection() {
   return (
-    <section id="values" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto">
+    <section
+      id="values"
+      class="py-32 px-8 bg-linear-to-br from-emerald-800 to-emerald-700"
+    >
+      <div class="max-w-7xl mx-auto ">
         <div class="text-center mb-16">
           <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow hover:bg-primary/80 mb-4 bg-emerald-50 text-emerald-700 border-emerald-200">
             Our principles
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-emerald-50">
             Built on ethics, not exploitation
           </h2>
-          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p class="text-xl text-emerald-200 max-w-3xl mx-auto">
             These aren't just values on a wall. They're commitments we live by
             every single day.
           </p>
