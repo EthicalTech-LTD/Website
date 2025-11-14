@@ -1,3 +1,23 @@
+import { Icon } from "./Icon";
+
+const Tick = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
+  >
+    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+    <path d="m9 11 3 3L22 4"></path>
+  </svg>
+);
+
 export default function WhatWeDoSection() {
   return (
     <section class="py-20 px-6 bg-slate-50">
@@ -18,7 +38,7 @@ export default function WhatWeDoSection() {
           <div style="opacity: 1; transform: none;">
             <div class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl group bg-white">
               <div class="p-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Icon>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -35,7 +55,7 @@ export default function WhatWeDoSection() {
                     <path d="m6 8-4 4 4 4"></path>
                     <path d="m14.5 4-5 16"></path>
                   </svg>
-                </div>
+                </Icon>
                 <h3 class="text-2xl font-bold mb-4">Web development</h3>
                 <p class="text-slate-600 mb-6 leading-relaxed">
                   Beautiful, accessible websites built with modern standards and
@@ -43,57 +63,15 @@ export default function WhatWeDoSection() {
                 </p>
                 <div class="space-y-2">
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Responsive design</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Performance optimized</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>WCAG compliant</span>
                   </div>
                 </div>
@@ -103,7 +81,7 @@ export default function WhatWeDoSection() {
           <div style="opacity: 1; transform: none;">
             <div class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl group bg-white">
               <div class="p-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Icon>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -122,7 +100,7 @@ export default function WhatWeDoSection() {
                     <path d="M4 17v2"></path>
                     <path d="M5 18H3"></path>
                   </svg>
-                </div>
+                </Icon>
                 <h3 class="text-2xl font-bold mb-4">Digital strategy</h3>
                 <p class="text-slate-600 mb-6 leading-relaxed">
                   Honest consulting that prioritizes your real needs over
@@ -130,57 +108,15 @@ export default function WhatWeDoSection() {
                 </p>
                 <div class="space-y-2">
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Business analysis</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Tech stack selection</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Growth planning</span>
                   </div>
                 </div>
@@ -190,7 +126,7 @@ export default function WhatWeDoSection() {
           <div style="opacity: 1; transform: none;">
             <div class="rounded-xl text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl group bg-white">
               <div class="p-8">
-                <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Icon>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -207,7 +143,7 @@ export default function WhatWeDoSection() {
                     <circle cx="12" cy="12" r="6"></circle>
                     <circle cx="12" cy="12" r="2"></circle>
                   </svg>
-                </div>
+                </Icon>
                 <h3 class="text-2xl font-bold mb-4">Product design</h3>
                 <p class="text-slate-600 mb-6 leading-relaxed">
                   User-centered design that respects privacy and creates genuine
@@ -215,57 +151,15 @@ export default function WhatWeDoSection() {
                 </p>
                 <div class="space-y-2">
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>UX Research</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>UI Design</span>
                   </div>
                   <div class="flex items-center gap-2 text-slate-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
-                    >
-                      <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                      <path d="m9 11 3 3L22 4"></path>
-                    </svg>
+                    <Tick />
                     <span>Prototyping</span>
                   </div>
                 </div>
