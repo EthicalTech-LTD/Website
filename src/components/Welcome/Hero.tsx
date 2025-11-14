@@ -8,7 +8,7 @@ const stats = [
 function StatsBlock() {
   return (
     <div class="relative" style="opacity: 1; transform: none;">
-      <div class="relative bg-gradient-to-br from-emerald-800 to-emerald-500 rounded-3xl p-8 shadow-2xl">
+      <div class="relative bg-gradient-to-br from-emerald-800 to-emerald-700 rounded-3xl p-8 shadow-2xl">
         <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/20 to-emerald-500/20 rounded-3xl backdrop-blur-sm"></div>
         <div class="relative space-y-6">
           {stats.map((stat, index) => (
