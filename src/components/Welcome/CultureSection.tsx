@@ -138,7 +138,7 @@ export default function CultureSection() {
             <h2 class="text-4xl md:text-5xl font-bold mb-6">
               A flat structure that actually works
             </h2>
-            <p class="text-xl text-blue-50 mb-8 leading-relaxed">
+            <p class="text-xl text-emerald-50 mb-8 leading-relaxed">
               No hierarchy games. No salary secrets. Our junior developers earn
               a fair wage, and our senior developers aren't astronomically
               overpaid. Everyone knows what everyone makes, and we're proud of
@@ -150,7 +150,7 @@ export default function CultureSection() {
                   {c.icon && c.icon()}
                   <div>
                     <h4 class="font-bold mb-1">{c.title}</h4>
-                    <p class="text-blue-100">
+                    <p class="text-emerald-100">
                       Our highest paid team member earns exactly the same as our
                       lowest. True equity.
                     </p>
