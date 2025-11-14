@@ -78,7 +78,7 @@ export default function Footer() {
                 </a>
               </li>
               <li class="text-slate-400">+44 7700 000 000</li>
-              <li class="text-slate-400">San Francisco, CA</li>
+              <li class="text-slate-400">England, UK</li>
             </ul>
           </div>
         </div>
