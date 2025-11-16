@@ -11,7 +11,7 @@ const Tick = () => (
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="lucide lucide-circle-check-big w-5 h-5 text-emerald-500"
+    class="w-5 h-5 text-emerald-500"
   >
     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
     <path d="m9 11 3 3L22 4"></path>
@@ -36,7 +36,7 @@ const cards = [
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-code-xml w-8 h-8 text-white"
+            class="w-8 h-8 text-white"
           >
             <path d="m18 16 4-4-4-4"></path>
             <path d="m6 8-4 4 4 4"></path>
@@ -64,7 +64,7 @@ const cards = [
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-sparkles w-8 h-8 text-white"
+            class="w-8 h-8 text-white"
           >
             <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
             <path d="M20 3v4"></path>
@@ -94,7 +94,7 @@ const cards = [
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-target w-8 h-8 text-white"
+            class="w-8 h-8 text-white"
           >
             <circle cx="12" cy="12" r="10"></circle>
             <circle cx="12" cy="12" r="6"></circle>

@@ -15,7 +15,7 @@ const cultureCards = [
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-trending-up w-6 h-6 text-emerald-200 flex-shrink-0 mt-1"
+          class="w-6 h-6 text-emerald-200 shrink-0 mt-1"
         >
           <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
           <polyline points="16 7 22 7 22 13"></polyline>
@@ -39,7 +39,7 @@ const cultureCards = [
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-heart w-6 h-6 text-emerald-200 flex-shrink-0 mt-1"
+          class="w-6 h-6 text-emerald-200 shrink-0 mt-1"
         >
           <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
         </svg>
@@ -62,7 +62,7 @@ const cultureCards = [
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-shield w-6 h-6 text-emerald-200 flex-shrink-0 mt-1"
+          class="w-6 h-6 text-emerald-200 shrink-0 mt-1"
         >
           <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
         </svg>
@@ -113,7 +113,7 @@ export default function CultureSection() {
   return (
     <section
       id="culture"
-      class="py-20 px-6 bg-gradient-to-br from-emerald-800 to-emerald-500 text-white"
+      class="py-20 px-6 bg-linear-to-br from-emerald-800 to-emerald-500 text-white"
     >
       <div class="max-w-7xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -129,7 +129,7 @@ export default function CultureSection() {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-zap w-3 h-3 mr-1"
+                class="w-3 h-3 mr-1"
               >
                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
               </svg>
