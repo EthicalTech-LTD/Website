@@ -1,9 +1,17 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<!-- your-page.astro -->
-<button id="error-button">Throw test error</button>
+<Layout>
+    <div class="my-16 px-8 py-16">
+        <button
+            class="bg-emerald-700 hover:bg-emerald-800 text-white px-2 py-4"
+            id="error-button">Throw test error</button
+        >
+    </div>
+    <!-- your-page.astro -->
+</Layout>
+
 <script>
     function handleClick() {
         throw new Error("This is a test error");
