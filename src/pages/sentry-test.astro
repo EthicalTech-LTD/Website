@@ -17,6 +17,6 @@ import Layout from "../layouts/Layout.astro";
         throw new Error("This is a test error");
     }
     document
-        .querySelector("#error-button")
-        .addEventListener("click", handleClick);
+        ?.querySelector("#error-button")
+        ?.addEventListener("click", handleClick);
 </script>
