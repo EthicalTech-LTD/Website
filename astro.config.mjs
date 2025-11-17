@@ -1,20 +1,25 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import solidJs from "@astrojs/solid-js";
+import react from "@astrojs/react";
 import sentry from "@sentry/astro";
+import svgr from "vite-plugin-svgr";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
-    solidJs(),
     sentry({
       project: "ethicaltechuk-website",
       org: "ethicaltech-uk",
       authToken: process.env.SENTRY_AUTH_TOKEN,
     }),
+    react(),
   ],
   vite: {
-    plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        "@": "/src",
+      },
+    },
+    plugins: [tailwindcss(), svgr()],
   },
 });
