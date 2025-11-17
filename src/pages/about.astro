@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const textGradientClasses = "block bg-linear-to-r from-emerald-800 to-emerald-700 bg-clip-text text-transparent";
+const textClasses = "text-emerald-800";
+---
+
+<Layout>
+  <div class="mx-auto max-w-7xl px-4 py-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-10 text-emerald-900">About</h1>
+
+    <!-- Hero -->
+    <section class="flex flex-col md:flex-row md:items-center md:gap-10 mb-16">
+        <img src="/ethicaltech_uk-avatar.png" alt="EthicalTech avatar" class="w-36 h-36 rounded-xl object-cover shadow-sm" />
+        <div>
+            <h2 class={`text-3xl font-semibold mb-3 ${textClasses}`}>
+                Building digital products with integrity and precision
+            </h2>
+            <p class="text-gray-600 max-w-2xl">
+                EthicalTech is a founder-led web agency focused on quality engineering,
+                transparent delivery, and an equitable approach to business.
+            </p>
+        </div>
+    </section>
+
+    <!-- Founder Intro -->
+    <section id="founder" class="mb-16">
+      <h2 class={`text-2xl font-semibold mb-6 ${textClasses}`}>Meet the founder</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            <strong class="text-gray-900">EthicalTech</strong> is run by a software developer with over a decade of 
+            experience building performant, accessible web products. The focus is 
+            modern architecture, pragmatic back-end integrations, and measurable outcomes.
+          </p>
+          <p>
+            Rather than positioning as a traditional agency, EthicalTech emphasises 
+            transparent delivery, respectful timelines, and engineering discipline. 
+            The emphasis is on long-term product quality and predictable outcomes.
+          </p>
+        </div>
+        <div>
+          <div class="bg-white border border-gray-200 shadow-sm rounded-xl p-6">
+            <p class="font-semibold text-gray-900 mb-3">Quick background</p>
+            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+              <li>Front-end engineering: modern JS/TS, component-driven design</li>
+              <li>Performance and optimisation for web and mobile</li>
+              <li>Headless CMS and composable architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ethical Philosophy -->
+    <section id="ethos" class="mb-16">
+      <h2 class={`text-2xl font-semibold ${textClasses} mb-4`}>The EthicalTech approach</h2>
+      <p class="text-gray-700 max-w-2xl mb-10">
+        Ethics at EthicalTech is operational. These are the concrete practices that guide 
+        how projects are scoped, developed and delivered.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Column 1 -->
+        <div class="space-y-6">
+          <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Transparency & Pricing</h3>
+            <p class="text-gray-700">
+              Clear scoping, fixed-fee or milestone billing where appropriate, and a commitment 
+              to documenting change requests and their impact on cost and timeline.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">No dark patterns</h3>
+            <p class="text-gray-700">
+              Interfaces are built with user goals in mind — no manipulative patterns, no surprise 
+              opt-ins, and accessible UX by default.
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="space-y-6">
+          <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Profit-sharing & Community</h3>
+            <p class="text-gray-700">
+              A portion of profits is earmarked for community initiatives and open-source 
+              contributions. When relevant, client projects can include public-facing components 
+              that benefit the wider ecosystem.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Sustainable delivery</h3>
+            <p class="text-gray-700">
+              No crunch. Predictable delivery schedules and realistic expectations are part of 
+              the contract from the start.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

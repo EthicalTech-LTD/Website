@@ -87,7 +87,7 @@ const testimonials = [
 
 function RenderTestimonials() {
   return (
-    <div className="bg-white rounded-3xl p-8 shadow-2xl">
+    <div className="bg-white rounded-3xl shadow-2xl">
       <h3 className="text-2xl font-bold text-emerald-900 mb-6">
         What people say
       </h3>

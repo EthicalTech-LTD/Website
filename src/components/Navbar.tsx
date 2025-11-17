@@ -1,3 +1,7 @@
+const links = [
+  { name: "About", href: "/about" },
+]
+
 export default function Navbar() {
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-slate-200 z-50">
@@ -24,12 +28,15 @@ export default function Navbar() {
           </a>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <a
-            href="#services"
-            className="text-slate-600 hover:text-emerald-600 transition-colors font-medium"
-          >
-            Services
-          </a>
+          {links.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-slate-600 hover:text-emerald-600 transition-colors font-medium"
+            >
+              {link.name}
+            </a>
+          ))}
 
           <button className="inline-flex items-center justify-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-all hover:scale-105 font-medium">
             Get in touch
