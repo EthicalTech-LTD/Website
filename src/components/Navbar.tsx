@@ -3,7 +3,7 @@ export default function Navbar() {
     <header class="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-slate-200 z-50">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <div class="w-10 h-10 bg-gradient-to-br from-emerald-800 to-emerald-500 rounded-lg flex items-center justify-center">
+          <div class="w-10 h-10 bg-linear-to-br from-emerald-800 to-emerald-500 rounded-lg flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
