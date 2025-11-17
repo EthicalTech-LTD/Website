@@ -93,7 +93,7 @@ function RenderTestimonials() {
       </h3>
       <div className="space-y-6">
         {testimonials.map((t) => (
-          <div className="border-l-4 border-emerald-500 pl-6 py-2">
+          <div key={`${t.author}`} className="border-l-4 border-emerald-500 pl-6 py-2">
             <p className="text-emerald-900 mb-3 leading-relaxed">
               <q>{t.quote}</q>
             </p>
@@ -145,7 +145,7 @@ export default function CultureSection() {
             </p>
             <div className="space-y-4">
               {cultureCards.map((c) => (
-                <div className="flex items-start gap-4 bg-emerald-700 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                <div key={c.title} className="flex items-start gap-4 bg-emerald-700 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                   {c.icon && c.icon()}
                   <div>
                     <h4 className="font-bold mb-1">{c.title}</h4>

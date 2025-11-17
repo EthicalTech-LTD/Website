@@ -2,8 +2,7 @@ export default function ContactSection() {
   return (
     <section className="py-20 px-6 bg-slate-50">
       <div className="max-w-4xl mx-auto text-center">
-        <div style={{ opacity: 1, transform: "none" }}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to work with an agency that gives a damn?
           </h2>
           <p className="text-xl text-slate-600 mb-10">
@@ -33,7 +32,6 @@ export default function ContactSection() {
               View our pricing
             </button>
           </div>
-        </div>
       </div>
     </section>
   );

@@ -128,7 +128,7 @@ export default function WhatWeDoSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((c) => {
             return (
-              <div>
+              <div key={c.title}>
                 <div className="rounded-xl text-card-foreground shadow h-full border-2 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl group bg-white">
                   <div className="p-8">
                     {c.icon && c.icon()}
@@ -138,7 +138,7 @@ export default function WhatWeDoSection() {
                     </p>
                     <div className="space-y-2">
                       {c.bullets.map((b) => (
-                        <div className="flex items-center gap-2 text-emerald-800">
+                        <div key={`${c.title}-${b}`} className="flex items-center gap-2 text-emerald-800">
                           <Tick />
                           <span>{b}</span>
                         </div>

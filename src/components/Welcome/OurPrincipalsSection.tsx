@@ -118,7 +118,7 @@ interface ValueCardProps {
 
 function RenderValueCard({ title, description, icon }: ValueCardProps) {
   return (
-    <div style={{ opacity: 1, transform: "none" }}>
+    <div key={title} style={{ opacity: 1, transform: "none" }}>
       <div className="rounded-xl bg-emerald-700  text-center text-card-foreground shadow h-full border-2 border-white/20 hover:border-emerald-400 transition-all duration-300 hover:shadow-lg group">
         <div className="p-6 flex flex-col justify-center items-center">
           {icon()}
